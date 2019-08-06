@@ -1,0 +1,48 @@
+.binotrade
+    background: #fbfcfe
+    &__content
+        @media screen and (max-width: 1035px)
+            margin-left: 10px
+            margin-right: 10px
+    &__content > span
+        font-size: 30px
+        font-weight: normal
+        line-height: 39px
+        letter-spacing: 0.1px
+        color: #1E2945
+        @media screen and (max-width: 537px)
+            font-size: 25px
+            line-height: 30px
+    &__content > p 
+        column-count: 2
+        column-gap: 70px
+        line-height: 26px
+        font-size: 18px
+        color: #1E2945
+        margin-top: 33px
+        @media screen and (max-width: 537px)
+            font-size: 15px
+            line-height: 23px
+            column-gap: 30px
+    &__content .binotrade_span
+        display: inline-block
+        transition: .3s ease-in-out
+    &__content .binotrade_span:after
+        background-color: #2E73FE
+        display: block
+        content: ""
+        height: 2.3px
+        width: 0%
+        left: 50%
+        position: relative
+        transition: width .3s ease-in-out
+        transform: translateX(-50%)
+    &__content .binotrade_span:hover:after,
+    &__content .binotrade_span:focus:after 
+        width: 100%
+    &__content .binotrade_span:hover
+        color: #2E73FE
+    &__content a
+        text-decoration: none
+        color: #1E2945
+        

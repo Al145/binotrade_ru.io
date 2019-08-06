@@ -1,0 +1,88 @@
+.partners 
+    background: #fbfcfe
+    &__box
+        width: 90%
+        height: 560px
+        background: #fff
+        margin: 0 auto
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.02)
+        transition: .3s linear
+        @media screen and (max-width: 960px)
+          height: 500px
+        @media screen and (max-width: 800px)
+          height: 450px
+        @media screen and (max-width: 731px)
+          height: 380px
+        @media screen and (max-width: 608px)
+          height: 300px
+        @media screen and (max-width: 325px)
+          height: 250px
+    &__box > span
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 55%
+        font-size: 40px
+        line-height: 50px
+        letter-spacing: 0.1px
+        color: #1E2945
+        margin-bottom: -60px
+        transition: .3s linear
+        @media screen and (max-width: 1056px)
+          font-size: 35px
+        @media screen and (max-width: 960px)
+          font-size: 30px
+          margin-bottom: -100px
+        @media screen and (max-width: 800px)
+          font-size: 28px
+        @media screen and (max-width: 731px)
+          font-size: 27px
+        @media screen and (max-width: 608px)
+          font-size: 26px
+          margin-bottom: -80px
+        @media screen and (max-width: 498px)
+          font-size: 23px
+        @media screen and (max-width: 397px)
+          margin-bottom: -70px
+          font-size: 18px
+    &__icons > img
+        display: flex
+        width: 999px
+        margin: 0 auto
+        cursor: pointer
+        transition: .3s linear
+        @media screen and (max-width: 1125px)
+          width: 800px
+          margin: 0 auto
+          padding-top: 20px
+        @media screen and (max-width: 960px)
+          width: 750px
+        @media screen and (max-width: 856px)
+          width: 700px
+        @media screen and (max-width: 800px)
+          width: 640px
+        @media screen and (max-width: 731px)
+          width: 530px
+        @media screen and (max-width: 608px)
+          width: 430px
+        @media screen and (max-width: 498px)
+          width: 330px
+        @media screen and (max-width: 388px)
+          width: 290px
+        @media screen and (max-width: 347px)
+          width: 250px
+    &__icons:hover
+        animation: heartBeat 1.3s ease-in-out
+
+@keyframes heartBeat 
+  0% 
+    transform: scale(1)
+  14% 
+    transform: scale(1.04)
+  28% 
+    transform: scale(1);
+  42% 
+    transform: scale(1.04)
+  70% 
+    transform: scale(1)
+        

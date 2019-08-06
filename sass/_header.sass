@@ -1,0 +1,155 @@
+.header
+    width: 100%
+    height: 900px
+    background: url('../img/header.jpg') no-repeat
+    background-size: cover
+    @media screen and (max-width: 440px)
+        height: 111vh
+    &__navbar
+        font-size: 15px
+        display: flex
+        color: #fff
+        align-items: center
+        min-height: 70px
+        @media screen and (max-width: 724px)
+            flex-direction: column
+            padding-top: 20px
+    &__navbar .logo img
+        margin-left: 52px
+        margin-right: 10px
+        @media screen and (max-width: 724px)
+            display: flex
+            justify-content: center
+            margin: 0
+            padding: 0
+            margin-bottom: 7px
+    &__navbar .logo img:hover
+        animation: smudge 10s 
+    &__navbar button 
+        margin-left: 40px
+        background: Transparent
+        border: 1px solid #FFFFFF
+        border-radius: 4px
+        color: white
+        padding: 7px 30px
+        cursor: pointer
+        text-align: center
+        text-decoration: none
+        transition: .3s linear  
+        @media screen and (max-width: 1125px)
+            margin-right: 40px
+    &__navbar .lang 
+        display: inline-block
+        line-height: 1
+        text-decoration:none
+        cursor: pointer
+        position: relative
+        text-transform: uppercase
+        text-decoration: none
+        color: #fff
+        margin-left: 10px
+        transition: .3s ease-in-out
+        @media screen and (max-width: 724px)
+            margin: 0 auto
+            border: 1px #fff solid
+            padding: 7px 4px 5px
+            border-radius: 5px
+            margin-top: 5px
+    &__navbar .lang:after
+        background-color: #BFEFFF
+        display: block
+        content: ""
+        height: 2px
+        width: 0%
+        left: 50%
+        position: relative
+        transition: width .3s ease-in-out
+        transform: translateX(-50%)
+        @media screen and (max-width: 724px)
+            display: none
+    
+    &__navbar .lang:hover:after,
+    &__navbar .lang:focus:after 
+        width: 100%
+    &__navbar .lang:hover
+        color: #BFEFFF
+        @media screen and (max-width: 724px)
+            color: #335ffe
+            background: #fff
+    &__navbar .nav 
+        display: inline-block
+        line-height: 1
+        text-decoration: none
+        cursor: pointer
+        position: relative
+        text-decoration: none
+        color: #fff
+        margin-left: 30px
+        transition: .3s ease-in-out
+        @media screen and (max-width: 440px)
+            margin: 0
+            padding-top: 5px
+    &__navbar .nav:after
+        background-color: #BFEFFF
+        display: block
+        content: ""
+        height: 2px
+        width: 0%
+        left: 50%
+        position: relative
+        transition: width .3s ease-in-out
+        transform: translateX(-50%)
+        top: 2px
+    &__navbar .nav:hover:after,
+    &__navbar .nav:focus:after 
+        width: 100%
+    &__navbar .nav:hover
+        color: #BFEFFF
+    &__navbar button:hover
+        background: #fff
+        color: #22a4fc
+    &__navbar li
+        list-style: none
+        @media screen and (max-width: 440px)
+            margin-bottom: 6px
+    &__navbar a 
+        @media screen and (max-width: 440px)
+            text-align: center
+    &__navbar ul 
+        display: flex
+        width: 79%
+        justify-content: flex-end
+        align-items: center
+        @media screen and (max-width: 724px)
+            justify-content: space-around
+            width: 100%
+        @media screen and (max-width: 472px)
+            font-size: 13px
+        @media screen and (max-width: 440px)
+            flex-direction: column
+            margin-top: 5px
+            font-size: 16px
+    &__navbar .divider
+        border-right: 1px solid #fff
+        height: 20px
+        opacity: .2
+        @media screen and (max-width: 724px)
+            display: none
+    &__navbar .divider_2
+        border-right: 1px solid #fff
+        height: 28px
+        opacity: .3
+        margin-left: 25px
+        margin-right: -10px
+        @media screen and (max-width: 724px)
+            display: none
+
+@keyframes smudge 
+	0% 
+		transform: rotate(0deg) translateY(0px)
+		opacity 1
+		filter: blur(1px)
+	100% 
+		transform: rotate(1deg) translateY(-110px)
+		opacity: 0
+		filter: blur(20px)
